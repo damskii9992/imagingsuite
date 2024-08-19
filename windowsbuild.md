@@ -2,7 +2,7 @@
 
 ```bash
 pip install --upgrade conan
-conan install . --profile:host profiles\windows_msvc_17_release --profile:build profiles\windows_msvc_17_release
+conan install . --profile:all profiles\windows_msvc_17_release
 conan build .
 cd ../build-imagingsuite/bin/Release
 %QTPATH%/bin/windeployqt muhrec.exe
